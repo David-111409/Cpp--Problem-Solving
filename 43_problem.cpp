@@ -5,11 +5,11 @@ using namespace std;
 int main(){
     double x ;
     double n ;
-    long long sum = -1;
+    long long sum = 0;
 
     cin >> x >> n;
 
-    for (int i = 0; i <= n; i+= 2){
+    for (int i = 2; i <= n; i+= 2){
         sum +=  pow(x, i);
     }
 
