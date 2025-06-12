@@ -1,20 +1,22 @@
+#include <iostream>
 using namespace std;
-#include<iostream>
-#include<cmath>
- 
-int main(){
-    double x ;
-    double n ;
-    long long sum = 0;
 
+// Manual power function (no pow)
+long long my_pow(long long x, int p) {
+    long long res = 1;
+    for (int i = 0; i < p; ++i)
+        res *= x;
+    return res;
+}
+
+int main() {
+    int x, n;
     cin >> x >> n;
-
-    for (int i = 2; i <= n; i+= 2){
-        sum +=  pow(x, i);
+    long long sum = 0; // (x^0 - 1) = 1 - 1 = 0
+    for (int i = 2; i <= n; i += 2) {
+        sum += my_pow(x, i);
     }
-
     cout << sum;
-
     return 0;
 }
 
