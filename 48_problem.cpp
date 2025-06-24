@@ -15,9 +15,8 @@ int main() {
      num1 = num2;
      num2 = num3;
 	
+     cout<<num1<<" "<<num2<<endl;	// 231 7
 
-	  cout<<num1<<" "<<num2<<endl;	// 231 7
-
-	  return 0;
+     return 0;
 
 }
