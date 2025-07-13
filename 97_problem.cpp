@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-	int n;
-	int value;
+    int n;
+    int value;
     int digit = 0;
     int ar[10] = {0};
 	cin >> n;
